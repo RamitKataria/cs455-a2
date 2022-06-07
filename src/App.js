@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import RecipesList from "./features/recipes/recipesList";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <main>
+
+                {/*<button className="form-button" id="show-form-button">NEW</button>*/}
+
+
+                <RecipesList/>
+
+            </main>
+
+            <footer>
+                <p>Made by <a href="https://github.com/RamitKataria">Ramit Kataria</a></p>
+            </footer>
+        </>
+    );
 }
 
 export default App;
