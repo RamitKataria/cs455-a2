@@ -1,9 +1,14 @@
 import React from 'react';
-import { createRoot } from 'react-dom/client';
-import { Provider } from 'react-redux';
-import { store } from './app/store';
+import {createRoot} from 'react-dom/client';
+import {Provider} from 'react-redux';
+import {store} from './app/store';
 import App from './App';
 import './index.css';
+
+store.subscribe(() =>
+    Object.keys(store.getState()).forEach(
+        (key) => localStorage.setItem(key, JSON.stringify(store.getState()['recipes'])))
+)
 
 const container = document.getElementById('root');
 const root = createRoot(container);
@@ -11,7 +16,7 @@ const root = createRoot(container);
 root.render(
     <React.StrictMode>
         <Provider store={store}>
-            <App />
+            <App/>
         </Provider>
     </React.StrictMode>
 );

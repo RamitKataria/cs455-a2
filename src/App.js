@@ -4,12 +4,7 @@ function App() {
     return (
         <>
             <main>
-
-                {/*<button className="form-button" id="show-form-button">NEW</button>*/}
-
-
                 <RecipesList/>
-
             </main>
 
             <footer>

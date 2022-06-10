@@ -1,13 +1,99 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    margin: 0;
+    background-color: black;
+    color: #E0F7FA;
+    min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.88);
+    display: flex;
+}
+
+.modal-container {
+    margin: auto;
+    display: flex;
+    width: 84%;
+    height: 84%;
+    background-color: black;
+    border-radius: 12px;
+}
+
+.modal-main {
+    margin: auto;
+    display: flex;
+    width: 80%;
+    height: 80%;
+}
+
+#recipe-list-header {
+    display: flex;
+}
+
+button {
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #006064;
+    cursor: pointer;
+}
+
+.level-00dp {
+    background-color: rgba(1, 1, 1, 0);
+}
+
+.level-01dp {
+    background-color: rgba(1, 1, 1, 5%);
+}
+
+.level-02dp {
+    background-color: rgba(1, 1, 1, 7%);
+}
+
+.level-03dp {
+    background-color: rgba(1, 1, 1, 8%);
+}
+
+.level-04dp {
+    background-color: rgba(1, 1, 1, 9%);
+}
+
+.level-06dp {
+    background-color: rgba(1, 1, 1, 11%);
+}
+
+.level-08dp {
+    background-color: rgba(1, 1, 1, 12%);
+}
+
+.level-12dp {
+    background-color: rgba(1, 1, 1, 14%);
+}
+
+.level-16dp {
+    background-color: rgba(1, 1, 1, 15%);
+}
+
+.level-24dp {
+    background-color: rgba(1, 1, 1, 16%);
+}
+
+.shadow {
+    box-shadow: 0 0 2px black;
 }
