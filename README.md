@@ -1,5 +1,3 @@
-# CPSC 455 - Assignment 2
+# Simple Recipe Website
 
-## Resources Used
-
-- [Redux official guides](https://redux.js.org/tutorials/essentials/part-1-overview-concepts)
+Made using React, CSS and Redux
